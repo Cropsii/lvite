@@ -14,7 +14,9 @@ export default function CountButton() {
         style={{ userSelect: "none", justifyContent: "space-between" }}
         className="todoItem"
       >
-        <div onClick={pressHeandler} style={{flexGrow: 1}}>Count: {count}</div>{" "}
+        <div onClick={pressHeandler} style={{ flexGrow: 1 }}>
+          Count: {count}
+        </div>
         <i class="fa-solid fa-rotate-right" onClick={Reset}></i>
       </div>
     </>
