@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 
-export default function TodoButton() {
+
+export default function CountButton() {
     const [count,setCount] = useState(0)
     const pressHeandler = () =>{
         setCount(count + 1)
