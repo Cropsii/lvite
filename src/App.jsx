@@ -4,7 +4,6 @@ import TodoList from "./components/TodoList";
 
 export default function App() {
   const [todos, settodos] = useState([]);
-
   const HandleAddTodo = (newTodo) => {
     if (newTodo.trim("") === "") return;
     const newTodosList = [...todos, newTodo];
