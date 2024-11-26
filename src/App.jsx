@@ -7,10 +7,16 @@ export default function App() {
     const newTodosList = [...todos, newTodos];
     settodos(newTodosList);
   };
+  const HandleDelete = (index) => {
+    const newList = todos.filter((todo)=>{
+      todo.id !== index
+    })
+    return settodos(newList)
+  };
   return (
     <>
-      <TodoInput HandleAddTodo={HandleAddTodo} />
-      <TodoList todos={todos} />
+      <TodoInput HandleAddTodo={HandleAddTodo}  />
+      <TodoList todos={todos} HandleDelete={HandleDelete}/>
     </>
   );
 }

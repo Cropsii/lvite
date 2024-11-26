@@ -7,7 +7,7 @@ export default function TodoButton() {
     }
   return (
     <>
-    <l className='todoItem' onClick={pressHeandler}>Count: {count}</l>
+    <div style={{userSelect:"none"}} className='todoItem' onClick={pressHeandler} >Count: {count}</div>
     </>
   )
 }
